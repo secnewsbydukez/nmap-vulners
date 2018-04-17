@@ -26,6 +26,10 @@ The only thing you should always keep in mind is that the script depends on havi
 
 ## Usage
     Use it as straightforward as you can:
+        ###old:
         nmap -sV --script vulners <target>
+        ###New:
+        nmap -sV --script nmap-vulners --script-args mincvss=5.0
+        payattention the script name,it should equal the file name after git clone.
         
 It is KISS after all.
